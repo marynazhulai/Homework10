@@ -27,12 +27,8 @@ public class Main {
             });
             System.out.println(myMap.toString());
 
-
-
-            System.out.println(Collections.max(myMap.values()));
-
             for (Map.Entry<String, Integer> entry : myMap.entrySet()) {
-                if (entry.getValue().equals(45)) {
+                if (entry.getValue().equals(Collections.max(myMap.values()))) {
                     System.out.printf("word " + entry.getKey() + ": " + Collections.max(myMap.values()) + " times");
                 }
             }
